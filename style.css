@@ -1,0 +1,70 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos específicos usando classes e IDs */
+#sobre {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+#educacao {
+    background-color: #eaeaea;
+    padding: 10px;
+}
+
+#experiencia {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+#habilidades {
+    background-color: #eaeaea;
+    padding: 10px;
+}
+
+#contato {
+    background-color: #f4f4f4;
+    padding: 10px;
+}

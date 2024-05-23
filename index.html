@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Raphaela Gomes Martins Fernandes</h1>
+    </header>
+
+    <nav>
+        <!-- Conteúdo do menu de navegação permanece o mesmo -->
+    </nav>
+
+    <main>
+        <!-- Seções do currículo permanecem as mesmas -->
+    </main>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Email: raphagmop@gmail.com</p>
+        <p>Celular: (35) 99924-1392</p>
+        
+        <h3>Formulário de Contato</h3>
+        <form id="contactForm">
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Mensagem:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meu Currículo</p>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            // Obter os valores dos campos do formulário
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            // Construir o corpo do e-mail
+            var body = "Nome: " + name + "\n";
+            body += "Email: " + email + "\n";
+            body += "Mensagem: " + message;
+
+            // Redirecionar para o e-mail desejado
+            window.location.href = "mailto:raphagmop@gmail.com?subject=Contato%20do%20Currículo&body=" + encodeURIComponent(body);
+        });
+    </script>
+</body>
+</html>
